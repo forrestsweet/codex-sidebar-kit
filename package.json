@@ -1,0 +1,21 @@
+{
+  "name": "codex-sidebar-kit",
+  "version": "0.1.0",
+  "description": "Build multi-menu sidebar apps that hand work to native Codex Desktop agents.",
+  "type": "module",
+  "private": true,
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "sidebarctl": "./scripts/sidebarctl.mjs"
+  },
+  "scripts": {
+    "dev": "node server/index.mjs",
+    "codex": "node scripts/codex.mjs",
+    "inject": "node scripts/inject.mjs",
+    "sidebarctl": "node scripts/sidebarctl.mjs",
+    "check": "node scripts/check.mjs"
+  }
+}

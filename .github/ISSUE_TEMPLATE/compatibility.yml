@@ -1,0 +1,46 @@
+name: Codex compatibility report
+description: Report a sidebar, iframe, or native composer break after a Codex Desktop update.
+title: "[Compatibility]: "
+labels: [compatibility]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep the unofficial compatibility layer current. Do not include account data, prompts, tokens, or private repository content.
+  - type: input
+    id: codex-version
+    attributes:
+      label: Codex Desktop version
+      description: Copy the exact version from the app's About screen.
+      placeholder: 26.x.x
+    validations:
+      required: true
+  - type: dropdown
+    id: path
+    attributes:
+      label: Broken path
+      options:
+        - Sidebar menus are missing
+        - Embedded page is blocked or blank
+        - Native composer is not prefilled
+        - Skill or sidebarctl cannot sync status
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: List the smallest steps that reproduce the problem.
+      placeholder: |
+        1. Run npm run codex
+        2. Open Agent Tasks
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized terminal output
+      description: Remove private paths, task content, and credentials before pasting.
+      render: shell
