@@ -4,11 +4,15 @@
   <a href="./README.md">English</a> · <strong>简体中文</strong>
 </p>
 
-**在 Codex Desktop 中增加多个自定义菜单，并把工作交给原生 Codex 智能体。**
+**把 Codex Desktop 变成你自己的 AI 工作台。**
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-111111.svg)](LICENSE)
 ![Platform](https://img.shields.io/badge/platform-macOS-111111.svg)
 ![Status](https://img.shields.io/badge/status-early%20preview-dfff67.svg)
+
+![Codex Sidebar Kit 展示三个自定义侧栏菜单与内嵌智能体任务看板](docs/assets/codex-sidebar-kit-hero.png)
+
+<p align="center"><sub>多菜单 · 原生 Codex 任务交接 · Skill 状态回写</sub></p>
 
 Codex Sidebar Kit 是一个配置驱动的非官方开源模板。开发者可以把自己的本地 Web 应用嵌入 Codex 侧栏，从页面中准备原生 Codex 任务，再通过 Skill 和本地 CLI 把执行结果同步回应用。
 

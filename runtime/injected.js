@@ -52,6 +52,15 @@
       || document.querySelector("aside");
   }
 
+  function sidebarSectionAnchor(mount) {
+    const nativeSection = mount.querySelector(
+      '[data-app-action-sidebar-section-heading="Pinned"], [data-app-action-sidebar-section-heading="Projects"]',
+    );
+    let anchor = nativeSection;
+    while (anchor && anchor.parentElement !== mount) anchor = anchor.parentElement;
+    return anchor?.parentElement === mount ? anchor : null;
+  }
+
   function icon(name) {
     return `<svg viewBox="0 0 24 24" aria-hidden="true">${icons[name] || icons["panel-left"]}</svg>`;
   }
@@ -88,7 +97,10 @@
     const mount = sidebarScroll();
     if (!mount) return;
     if (!section) section = createSection();
-    if (!section.isConnected || section.parentElement !== mount) mount.append(section);
+    const anchor = sidebarSectionAnchor(mount);
+    if (section.parentElement !== mount || section.nextElementSibling !== anchor) {
+      mount.insertBefore(section, anchor);
+    }
     syncSelection();
   }
 

@@ -4,11 +4,15 @@
   <strong>English</strong> · <a href="./README.zh-CN.md">简体中文</a>
 </p>
 
-**Add multiple custom menus and native-agent handoffs to Codex Desktop.**
+**Turn Codex Desktop into your own AI workspace.**
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-111111.svg)](LICENSE)
 ![Platform](https://img.shields.io/badge/platform-macOS-111111.svg)
 ![Status](https://img.shields.io/badge/status-early%20preview-dfff67.svg)
+
+![Codex Sidebar Kit showing three custom sidebar menus and an embedded agent task board](docs/assets/codex-sidebar-kit-hero.png)
+
+<p align="center"><sub>Multiple menus · Native Codex handoff · Skill-powered sync</sub></p>
 
 Codex Sidebar Kit is an unofficial, configuration-driven starter for building Web apps that live inside the Codex Desktop sidebar. A menu can display a local tool, read the current Codex context, prepare work in the **native Codex composer**, and let a Codex Skill write results back to the app.
 
